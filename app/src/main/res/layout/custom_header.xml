@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:translationZ="@dimen/_15sdp"
+    android:background="@drawable/bg_header"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_medium"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <ImageView
+        android:id="@+id/searchBtn"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="0dp"
+        android:src="@drawable/seaerch"
+        app:layout_constraintBottom_toBottomOf="@+id/titleTv"
+        app:layout_constraintEnd_toEndOf="@+id/titleTv"
+        app:layout_constraintTop_toTopOf="@+id/titleTv" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        app:iconifiedByDefault="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg2"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"
+        app:queryHint="@string/search_here"
+        tools:layout_editor_absoluteX="13dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

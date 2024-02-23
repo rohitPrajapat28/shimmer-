@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Qfon</string>
+    <string name="thai_airways">thai Airways</string>
+    <string name="id">ID</string>
+    <string name="slogan">Slogan :</string>
+    <string name="name">name</string>
+    <string name="trips">Trips</string>
+    <string name="country">Country</string>
+    <string name="head_quater">Head Quater</string>
+    <string name="website">Website</string>
+    <string name="search_here">Search here</string>
+    <string name="search">search</string>
+</resources>
